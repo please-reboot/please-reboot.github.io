@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-elegant
+        run: npm install -g resumed jsonresume-theme-even
 
       - name: Validate resume.json
         run: node -e "JSON.parse(require('fs').readFileSync('resume.json','utf8')); console.log('resume.json is valid JSON')"
@@ -35,10 +35,13 @@ jobs:
       - name: Render HTML
         run: |
           mkdir -p dist
-          resumed render resume.json --theme jsonresume-theme-elegant --output dist/index.html
+          resumed render resume.json --theme jsonresume-theme-even --output dist/index.html
 
       - name: Copy resume.json into site
         run: cp resume.json dist/resume.json
+
+      - name: Copy photo into site
+        run: cp photo.jpg dist/photo.jpg
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
