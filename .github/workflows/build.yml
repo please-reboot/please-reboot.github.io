@@ -1,0 +1,45 @@
+name: Build and publish resume
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install renderer
+        run: npm install -g resumed jsonresume-theme-elegant
+
+      - name: Validate resume.json
+        run: node -e "JSON.parse(require('fs').readFileSync('resume.json','utf8')); console.log('resume.json is valid JSON')"
+
+      - name: Render HTML
+        run: |
+          mkdir -p dist
+          resumed render resume.json --theme jsonresume-theme-elegant --output dist/index.html
+
+      - name: Render PDF
+        run: resumed export resume.json --theme jsonresume-theme-elegant --output dist/Christopher-Rohde-Resume.pdf
+
+      - name: Copy resume.json into site
+        run: cp resume.json dist/resume.json
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages

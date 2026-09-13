@@ -1,0 +1,161 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Christopher Rohde",
+    "label": "IT Infrastructure & Operations Leader",
+    "email": "career@chrisrohde.com",
+    "url": "https://please-reboot.github.io/",
+    "location": {
+      "city": "Richmond",
+      "region": "VA",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "chris-rohde",
+        "url": "https://linkedin.com/in/chris-rohde"
+      },
+      {
+        "network": "GitHub",
+        "username": "please-reboot",
+        "url": "https://github.com/please-reboot"
+      }
+    ],
+    "summary": "IT infrastructure and operations leader with more than 20 years of experience building and running technology for fast-moving, heavily regulated organizations. Directed infrastructure, identity, security, endpoints and manufacturing systems for a publicly traded multi-state cannabis operator supporting 50+ locations across six states. Set strategy and stayed hands on: led enterprise AI from business case through adoption, rebuilt the identity and privileged access model from nothing, modernized the endpoint and server estate onto Intune, Autopilot and Azure Arc, and integrated acquired sites through a continuous M&A pipeline."
+  },
+  "work": [
+    {
+      "name": "Ascend Wellness Holdings",
+      "position": "Director, Enterprise Infrastructure",
+      "location": "Remote",
+      "description": "Publicly traded multi-state cannabis operator",
+      "startDate": "2023-04-01",
+      "endDate": "2026-09-01",
+      "summary": "Owned infrastructure, identity, security and endpoint strategy across corporate, retail, cultivation and manufacturing sites in six states: 50+ locations and a $650K annual technology CapEx budget. As the organization's most senior technical resource, originated the technology direction for infrastructure, identity, cloud and data.",
+      "highlights": [
+        "Led enterprise AI end to end: business case, vendor comparison, security review and rollout to corporate users, then drove adoption personally through recurring office hours and company-wide webinars.",
+        "Owned AI after launch, monitoring usage analytics and managing consumption, licensing and feature governance as adoption grew from a team deployment into an enterprise platform.",
+        "Wrote custom AI connectors linking identity, support and data systems, plus an agent that surfaced answers from the SOP library and prompted users to close its gaps.",
+        "Led security improvements moving identity from no MFA at all to least privilege, Entra Privileged Identity Management and phishing-resistant MFA for every IT admin, ahead of Microsoft's own mandate.",
+        "Served as senior information security champion: deployed Microsoft Defender, migrated SIEM from FortiSIEM to Microsoft Sentinel and rolled out Conditional Access organization-wide.",
+        "Owned physical security across surveillance, access control and intrusion across a multi-state footprint.",
+        "Built Log Analytics workspaces extending logging depth for Entra ID, Sentinel and Defender.",
+        "Migrated endpoint management from an outsourced Kaseya VSA platform to Microsoft Intune, standing the new platform up in parallel and cutting over patch management once it proved out.",
+        "Deployed Windows Autopilot with coordinated OEM integrations to automate laptop provisioning and automated desktop and server patching fleet-wide through Microsoft Intune and Autopatch.",
+        "Wrote PowerShell remediation and deployment scripts packaged through Intune for application delivery, troubleshooting, log collection and registry configuration.",
+        "Automated high-volume new-hire onboarding end to end: Entra accounts created automatically from HR data, zero-touch computer provisioning through Intune and Autopilot.",
+        "Brought the full physical server estate under Azure Arc with established security baselines and standardized new workloads in Azure with point-to-point connectivity across the footprint.",
+        "Directed the migration of 15 firewalls in nine months with a team that had no prior firewall migration experience; managed Cisco Meraki networks across all sites.",
+        "Contracted Avanade for managed M365 backup and disaster recovery, adding a second layer of resilience alongside the endpoint estate.",
+        "Standardized and operated networks across 55 locations in six states with segmented POS/debit, data, guest and security traffic.",
+        "Provided network, wireless, Internet, voice, design input and incident response behind building-management and cultivation systems at five facilities, including GrowLink, BACnet controls, sensors, fertigation and plant monitoring.",
+        "Replaced vendor-deployed SFF desktops running critical facility apps with six Dell Hyper-V servers in 2025, consolidating two to three workloads per host with backup, DR and Azure Arc management.",
+        "Led new-store technology builds from LOI/license through completion: long-lead circuits, vendors, procurement, MDF/network, POS, back-office, kiosks and physical security. Pushed a repeatable NSO process and Microsoft Planner/Project tracking.",
+        "Personally performed most acquisition infrastructure due diligence, classifying findings as Day 1, this year or next year. Led integration including six acquisitions across two states in 60 days.",
+        "Built and mentored a 5-person infrastructure and field-operations team: two engineers grew from no infrastructure background into building Azure and network architecture within two years.",
+        "Owned annual IT opex/capex budget planning, capital builds and hardware spend; managed vendor relationships across CDW, Axis, Wachter, CTS and Thrive.",
+        "Stayed hands on in L2 support and operations. Adapted Zendesk around infrastructure, project, field-service and procurement work, and routed PRTG/Meraki monitoring through Zenduty for on-call alerts."
+      ]
+    },
+    {
+      "name": "Ascend Wellness Holdings",
+      "position": "Manager, Enterprise Infrastructure",
+      "location": "Remote",
+      "startDate": "2021-10-01",
+      "endDate": "2023-04-01",
+      "highlights": [
+        "Managed infrastructure for a rapidly scaling portfolio of retail, cultivation and manufacturing locations across six states.",
+        "Delivered complete retail technology build-outs and helped turn operating and compliance needs into buildable store designs, including explaining design choices to state inspectors when required.",
+        "Developed practical IT standards for new and acquired sites, balancing security and reliability requirements with the cost and remaining life of inherited infrastructure."
+      ]
+    },
+    {
+      "name": "Ascend Wellness Holdings",
+      "position": "Senior Manager, IT / Manager, IT",
+      "location": "Remote",
+      "startDate": "2020-08-01",
+      "endDate": "2021-10-01",
+      "highlights": [
+        "Led IT operations, vendor management and incident response through the company's highest-growth period.",
+        "Built and mentored the internal IT team and partner model supporting a fast-expanding physical footprint."
+      ]
+    },
+    {
+      "name": "MSP Builder",
+      "position": "Senior Engineer",
+      "location": "Remote",
+      "startDate": "2020-02-01",
+      "endDate": "2020-08-01",
+      "highlights": [
+        "Delivered infrastructure engineering and automation for managed service provider clients."
+      ]
+    },
+    {
+      "name": "MedMen Enterprises",
+      "position": "Manager, IT Support",
+      "startDate": "2018-05-01",
+      "endDate": "2019-11-01",
+      "highlights": [
+        "Led IT support operations for a high-growth, multi-state cannabis retailer."
+      ]
+    },
+    {
+      "name": "Network Doctor",
+      "position": "Manager, Managed Services",
+      "location": "Englewood Cliffs, NJ",
+      "startDate": "2017-06-01",
+      "endDate": "2018-02-01",
+      "highlights": [
+        "Managed the managed-services delivery team and client relationships for a regional MSP."
+      ]
+    },
+    {
+      "name": "Electronic Environments",
+      "position": "IT Consultant",
+      "location": "New York, NY",
+      "startDate": "2015-11-01",
+      "endDate": "2017-01-01",
+      "highlights": [
+        "Provided infrastructure consulting and technical support to corporate clients."
+      ]
+    },
+    {
+      "name": "KJ Technology Consulting",
+      "position": "Manager, Client Services",
+      "location": "New York, NY",
+      "startDate": "2007-08-01",
+      "endDate": "2015-10-01",
+      "highlights": [
+        "Led client services and technical delivery for an IT consultancy, building the discovery standards used to walk into undocumented client environments and generating engagements from support relationships."
+      ]
+    }
+  ],
+  "skills": [
+    { "name": "Enterprise AI Deployment & Adoption" },
+    { "name": "AI Agents & Tooling" },
+    { "name": "Azure Strategy & Execution" },
+    { "name": "Microsoft 365 Administration" },
+    { "name": "Microsoft Entra ID, PIM & Conditional Access" },
+    { "name": "Privileged Access Management" },
+    { "name": "Endpoint Security & Management" },
+    { "name": "Microsoft Intune & Windows Autopilot" },
+    { "name": "Microsoft Sentinel (SIEM)" },
+    { "name": "PowerShell Scripting & Automation" },
+    { "name": "Power Automate" },
+    { "name": "Network Strategy & Administration" },
+    { "name": "Information Security" },
+    { "name": "Building Management & Operational Technology" },
+    { "name": "Physical Security Systems" },
+    { "name": "SOP Development" },
+    { "name": "Project Management (MS Project / Planner)" },
+    { "name": "M&A IT Integration" },
+    { "name": "Multi-Site Build-Outs" },
+    { "name": "Vendor Management" },
+    { "name": "CapEx Budgeting" },
+    { "name": "IT Strategy & Team Leadership" }
+  ],
+  "meta": {
+    "theme": "elegant"
+  }
+}
