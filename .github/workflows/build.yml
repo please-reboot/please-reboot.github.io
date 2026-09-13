@@ -43,6 +43,9 @@ jobs:
       - name: Copy photo into site
         run: cp photo.jpg dist/photo.jpg
 
+      - name: Copy CNAME into site
+        run: cp CNAME dist/CNAME
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
