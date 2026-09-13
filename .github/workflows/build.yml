@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-elegant
+        run: npm install -g resumed jsonresume-theme-elegant puppeteer
 
       - name: Validate resume.json
         run: node -e "JSON.parse(require('fs').readFileSync('resume.json','utf8')); console.log('resume.json is valid JSON')"
