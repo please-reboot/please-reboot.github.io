@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install renderer
-        run: npm install -g resumed jsonresume-theme-elegant puppeteer
+        run: npm install -g resumed jsonresume-theme-elegant
 
       - name: Validate resume.json
         run: node -e "JSON.parse(require('fs').readFileSync('resume.json','utf8')); console.log('resume.json is valid JSON')"
@@ -36,9 +36,6 @@ jobs:
         run: |
           mkdir -p dist
           resumed render resume.json --theme jsonresume-theme-elegant --output dist/index.html
-
-      - name: Render PDF
-        run: resumed export resume.json --theme jsonresume-theme-elegant --output dist/Christopher-Rohde-Resume.pdf
 
       - name: Copy resume.json into site
         run: cp resume.json dist/resume.json
